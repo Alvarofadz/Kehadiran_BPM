@@ -2,7 +2,7 @@
 
 @section('content')
 <head>
-  <title>BPM</title>
+  <title>Punch card</title>
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -25,13 +25,14 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Laporan Lewat masuk</h1>
+            <h1><strong> PUNCH CARD</strong></h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Lewat</li>
+              <button type="button" class="btn btn-block btn-primary" alt="Print Receipt" onclick="window.print();" target="_blank" style="cursor:pointer; width:250px;"> PRINT </button>
             </ol>
+          </div>
+          <div style = "padding-top: 25px;text-align:right;padding-left:50px;">
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -42,16 +43,51 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <div class="card">
-
 
             <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Laporan Staff yang lewat akan dijana di sini</h3>
-              </div>
               <!-- /.card-header -->
               <div class="card-body">
-                {{$slug}}
+                
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th style="text-align:center; font-size:30px;" colspan ="7">KERAJAAN MALAYSIA</th>
+                  </tr>
+                  <tr>
+                    <th style="font-size:20px; padding-left: 50px; text-transform: uppercase;" colspan = "7">NO     : <br/> <br/> NAMA : {{ $staff->NAMA }} <br/> BAH. : BAHAGIAN PENGURUSAN MAKLUMAT <br/> KEM. : KEMENTERIAN KESIHATAN MALAYSIA<br/>BULAN : 
+                      @if( $staff->TARIKH == '2021-08-01') OGOS 
+                      @else($staff->TARIKH == '') LAIN 
+                      @endif</th>
+                  </tr>
+                  <tr>
+                    <th>TARIKH</th>
+                    <th>MASUK</th>
+                    <th>KELUAR</th>
+                    <th>MASUK</th>
+                    <th>KELUAR</th>
+                    <th>KENYATAAN</th>
+                    <th>T/T KETUA</th>
+                  </tr>
+                  </thead>
+                  
+                  <tbody>
+                    
+                  @foreach ($data as $user)
+                  <tr>
+                    <td>{{substr($user->TARIKH,8)}}</td>
+                    <td>{{substr($user->MASA_MASUK,-8)}}</td>
+                    <td></td>
+                    <td></td>
+                    <td>{{substr($user->MASA_KELUAR,-8)}}</td>
+                    <td>{{ $user->STATUS_KEHADIRAN}}</td>
+                    <td></td>
+                    
+                  </tr>
+                  
+                
+                @endforeach
+                </tbody>
+                </table>
               </div>
               <!-- /.card-body -->
             </div>
@@ -77,7 +113,6 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
-
 
 </body>
 @endsection

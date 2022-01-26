@@ -42,41 +42,41 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="home" class="nav-link">
+            <a href="/home" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Home
               </p>
             </a>
           </li>
-          <li class="nav-item menu-open">
+          <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-table"></i>
               <p>
-                Tables
+                Laporan
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="laporan1" class="nav-link">
+                <a href="/laporan1" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Lewat</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="laporan2" class="nav-link">
+                <a href="/laporan2" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Kurang jam</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="laporan3" class="nav-link">
+                <a href="/laporan3" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Luar kawasan</p>
                 </a>
               <li class="nav-item">
-                <a href="laporan4" class="nav-link">
+                <a href="/laporan4" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Punch card</p>
                 </a>

@@ -4,7 +4,8 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href=""><b>SISTEM KEHADIRAN </b>STAFF BPM<a>
+    <img  src='/img/zon_ict.png' alt="AdminLTELogo" height="120" width="120">
+    <a href=""><b><br/>SISTEM KEHADIRAN </b>STAFF BPM<a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
