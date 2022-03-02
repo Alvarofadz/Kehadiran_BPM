@@ -2,7 +2,7 @@
 
 @section('content')
 <head>
-    <title> BPM </title>
+    <title> BPM KKM </title>
 </head>
 <body class="hold-transition sidebar-mini">
 
@@ -18,7 +18,7 @@
     @include('layouts.sidebar')
   </div>
 </aside>
-                
+
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
