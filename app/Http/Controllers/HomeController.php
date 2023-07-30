@@ -24,9 +24,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $data1 = laporan::where('BAHAGIAN','LIKE','Bahagian Pengurusan Maklumat')->where('STATUS_KEHADIRAN','<>','Cuti')->where('STATUS_KEHADIRAN','<>','Biasa')->where('STATUS_KEHADIRAN','<>','Bekerja Dari Rumah')->where('STATUS_KEHADIRAN','<>','Luar Kawasan pejabat')->where('STATUS_KEHADIRAN','<>','Tidak Daftar Masuk')->where('STATUS_KEHADIRAN','<>','Bekerja Dari Rumah dan Tidak Daftar Keluar')->where('STATUS_KEHADIRAN','<>','Luar Kawasan Pejabat dan Tidak Daftar Keluar')->where('STATUS_KEHADIRAN','<>','Tidak Daftar Keluar')->where('STATUS_KEHADIRAN','<>','Tidak mencukupi jam kerja')->where('STATUS_KEHADIRAN','<>','Tidak Mencukupi Jam Kerja dan Bekerja Dari Rumah')->count();
-        $data2 = laporan::where('BAHAGIAN','LIKE','Bahagian Pengurusan Maklumat')->where('STATUS_KEHADIRAN','<>','Cuti')->where('JAM_BEKERJA','<=','8') ->count();
-        $data3 = laporan::where('BAHAGIAN','LIKE','Bahagian Pengurusan Maklumat')->where('STATUS_KEHADIRAN','LIKE','Luar Kawasan pejabat')->count();
-        return view('home',compact('data1','data2','data3'));
+        return view('home');
     }
 }

@@ -48,7 +48,7 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>{{ $data1}}<sup style="font-size: 20px"> laporan</sup></h3>
+                <h3>11<sup style="font-size: 20px"> laporan</sup></h3>
 
                 <p>Laporan lewat</p>
               </div>
@@ -63,7 +63,7 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>{{ $data2}}<sup style="font-size: 20px"> laporan</sup></h3>
+                <h3>11<sup style="font-size: 20px"> laporan</sup></h3>
 
                 <p>Kurang Jam</p>
               </div>
@@ -78,7 +78,7 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>{{ $data3}}<sup style="font-size: 20px"> laporan</sup></h3>
+                <h3>11<sup style="font-size: 20px"> laporan</sup></h3>
 
                 <p>Luar Kawasan</p>
               </div>
